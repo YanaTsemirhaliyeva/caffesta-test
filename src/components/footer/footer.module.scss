@@ -1,0 +1,125 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+
+.footer {
+  background-color: $color-burnt-orange;
+  color: $color-default-white;
+
+  &__container {
+    padding: 24px 150px 120px 204px;
+    max-width: 1990px;
+    margin: 0 auto;
+
+    @include vp-1919 {
+      padding: 40px 100px 120px;
+    }
+
+    @include vp-1023 {
+      padding: 40px 30px 120px 20px;
+    }
+  }
+
+  &__logo {
+
+    img {
+      @include vp-1023 {
+        max-width: 50%;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 114px;
+    flex-wrap: wrap;
+    margin-top: -11px;
+
+    @include vp-1919 {
+      padding-left: 47px;
+    }
+
+    @include vp-1439 {
+      row-gap: 50px;
+    }
+
+    @include vp-1023 {
+      padding-left: 36px;
+    }
+  }
+
+  &__text {
+    max-width: 530px;
+
+    @include vp-1919 {
+      max-width: 490px;
+    }
+
+    @include vp-1023 {
+      max-width: 360px;
+    }
+  }
+
+  &__description {
+    font-size: 36px;
+    line-height: 48px;
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 70px;
+
+    @include vp-1919 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    @include vp-1023 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  &__socials-title {
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 28px;
+
+    @include vp-1919 {
+      font-size: 36px;
+      line-height: 40px;
+    }
+
+    @include vp-1023 {
+      font-size: 32px;
+      line-height: 30px;
+    }
+  }
+
+  &__socials-links {
+    margin-left: -14px;
+  }
+
+  &__newsletter {
+
+    @include vp-1439 {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__links {
+
+    @include vp-1439 {
+      text-align: end;
+    }
+  }
+
+  &__right-column {
+    margin-top: -17px;
+    margin-left: 33px;
+
+    form {
+      margin-bottom: 60px;
+    }
+  }
+}

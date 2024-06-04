@@ -1,0 +1,25 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+.contact-phone {
+  display: flex;
+  align-items: center;
+  background-color: $color-burnt-orange;
+  color: $color-default-white;
+  padding: 22px 40px 22px 19px;
+  font-weight: 500;
+  border-radius: 20px;
+  gap: 7px;
+  transition: opacity $trans-default;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  img {
+
+    @include vp-1023 {
+      width: 26px;
+    }
+  }
+}

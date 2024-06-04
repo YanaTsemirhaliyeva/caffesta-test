@@ -1,0 +1,29 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+.nav-item {
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-grey;
+    gap: 0.5rem;
+
+    &:hover {
+
+      path {
+        fill: $color-burnt-orange;
+      }
+    }
+
+    path {
+      transition: fill $trans-default;
+    }
+  }
+
+  &__title {
+    display: block;
+    line-height: 100%;
+  }
+}

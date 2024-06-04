@@ -1,0 +1,35 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+.navigation-right {
+  background-color: $color-default-white;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: opacity $trans-default;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  svg {
+
+    @include vp-1023 {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  path {
+    fill: $color-burnt-orange;
+  }
+
+  &--disabled {
+    pointer-events: none;
+
+    path {
+      fill: $color-gainsboro;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+.header {
+  max-width: 1990px;
+  padding: 0 95px 0 120px;
+  margin: 0 auto;
+  width: 100%;
+
+  @include vp-1919 {
+    padding: 0 4rem;
+  }
+
+  @include vp-1919 {
+    padding: 0 2rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 32px;
+    padding: 40px 0 35px;
+
+    @include vp-1919 {
+      font-size: 28px;
+    }
+
+    @include vp-1439 {
+      font-size: 24px;
+    }
+
+    @include vp-1023 {
+      font-size: 20px;
+    }
+  }
+
+  &__logo-wrapper {
+    margin: -40px 0 0 -16px;
+
+    @include vp-1439 {
+      order: 1;
+    }
+  }
+
+  &__nav {
+    margin-left: auto;
+    margin-right: 30px;
+
+    @include vp-1439 {
+      order: 3;
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  &__contacts {
+
+    @include vp-1439 {
+      order: 2;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+.link {
+  display: block;
+  padding: 25px 64px;
+  border-radius: 30px;
+  background-color: $color-burnt-orange;
+  color: $color-default-white;
+  line-height: 100%;
+  font-weight: 500;
+  transition: opacity $trans-default;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @include vp-1279 {
+    font-size: 28px;
+  }
+}

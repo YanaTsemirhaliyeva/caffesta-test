@@ -1,0 +1,15 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+
+.article-title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 64px;
+  line-height: 60px;
+
+  @include vp-1279 {
+    font-size: 54px;
+  }
+}

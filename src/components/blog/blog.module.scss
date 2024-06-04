@@ -1,0 +1,39 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+
+.blog {
+  max-width: 1990px;
+  padding: 0 90px 0 121px;
+
+  @include vp-1919 {
+    padding: 0 40px;
+  }
+
+  @include vp-1023 {
+    padding: 0 20px;
+  }
+
+  &__title {
+    margin-bottom: 26px;
+  }
+
+  &__swiper {
+    position: relative;
+  }
+
+  &__navigation {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    top: 50%;
+    transform: translateY(-104%);
+    z-index: 5;
+
+    &--disabled {
+      pointer-events: none;
+    }
+  }
+}

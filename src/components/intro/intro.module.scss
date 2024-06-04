@@ -1,0 +1,82 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+
+.intro {
+  position: relative;
+  min-height: 771px;
+  display: flex;
+  margin-bottom: 88px;
+
+
+  &__container {
+    max-width: 1990px;
+    margin: 0 auto;
+    padding: 285px 66px 160px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    @include vp-1919 {
+      padding: 285px 30px 160px;
+    }
+  }
+
+  &__text-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 700px;
+    grid-column: 2/3;
+    text-align: center;
+
+    @include vp-1919 {
+      min-width: 600px;
+    }
+  }
+
+  &__title {
+    color: $color-free-speech-red;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+    @include vp-1919 {
+      font-size: 56px;
+    }
+  }
+
+  &__text {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 42px;
+
+    @include vp-1919 {
+      font-size: 28px;
+    }
+  }
+
+  &__bg-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: $color-grey;
+
+    @include vp-1279 {
+      left: -400px;
+    }
+
+    @include vp-1023 {
+      left: -500px;
+    }
+  }
+}

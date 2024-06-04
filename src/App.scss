@@ -1,0 +1,19 @@
+@import "sass/mixins.scss";
+@import "sass/variables.scss";
+
+.layout {
+  font-family: "DM Sans", sans-serif;
+  min-width: 767px;
+  font-size: 32px;
+  font-weight: 400;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-default-white;
+  overflow: hidden;
+}
+
+main {
+  flex-grow: 1;
+}
+

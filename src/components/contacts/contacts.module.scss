@@ -1,0 +1,21 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+.contacts {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 44px;
+
+  @include vp-1919 {
+    gap: 2rem;
+  }
+
+  @include vp-1439 {
+    gap: 1rem;
+  }
+
+  @include vp-1279 {
+    margin-left: auto;
+  }
+}

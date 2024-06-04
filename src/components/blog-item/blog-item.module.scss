@@ -1,0 +1,119 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+.blog-item {
+  max-width: 1390px;
+  margin: 0 auto;
+  display: flex;
+  padding: 84px 0;
+  position: relative;
+  margin-bottom: 52px;
+  padding-left: 56px;
+  letter-spacing: -0.1px;
+
+  @include vp-1919 {
+    max-width: 1000px;
+  }
+
+  @include vp-1439 {
+    max-width: 700px;
+  }
+
+  @include vp-1279 {
+    max-width: 650px;
+  }
+
+  @include vp-1023 {
+    max-width: 500px;
+  }
+
+  &__quotes {
+    position: absolute;
+    top: 25px;
+    left: 5px;
+
+    @include vp-1023 {
+      left: 20px;
+      top: 65px;
+    }
+
+    &--end {
+      position: absolute;
+      bottom: 54px;
+      right: 20%;
+
+      @include vp-1439 {
+        right: 14%;
+        bottom: 10px;
+      }
+
+      @include vp-1023 {
+        right: 10%;
+      }
+
+      img {
+
+        @include vp-1279 {
+          max-width: 70%;
+        }
+      }
+    }
+
+    img {
+
+      @include vp-1279 {
+        max-width: 70%;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+    @include vp-1919 {
+      font-size: 44px;
+      line-height: 40px;
+    }
+
+    @include vp-1279 {
+      font-size: 32px;
+      line-height: 30px;
+    }
+  }
+
+  &__description {
+    font-size: 36px;
+    line-height: 48px;
+
+    @include vp-1919 {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    @include vp-1279 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  &__img {
+    max-width: 245px;
+    border-radius: 50%;
+    border: 1rem solid $color-burnt-orange;
+
+    @include vp-1279 {
+      max-width: 180px;
+      border: 0.5rem solid $color-burnt-orange;
+    }
+  }
+}

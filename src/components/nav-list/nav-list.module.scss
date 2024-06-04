@@ -1,0 +1,24 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  font-family: "Playfair Display", serif;
+  color: $color-grey;
+
+  @include vp-1439 {
+    gap: 55px;
+    justify-content: center;
+  }
+
+  @include vp-1279 {
+    gap: 5rem;
+  }
+
+  @include vp-1023 {
+    gap: 3rem;
+  }
+}

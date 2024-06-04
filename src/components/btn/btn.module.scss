@@ -1,0 +1,18 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+.btn {
+  padding: 9px 25px 10px;
+  border-radius: 10px;
+  color: $color-burnt-orange;
+  border: none;
+  background-color: $color-default-white;
+  font-size: 36px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform $trans-default;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+}

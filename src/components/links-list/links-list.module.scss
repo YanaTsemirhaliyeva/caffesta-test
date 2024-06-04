@@ -1,0 +1,35 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+
+.links-list {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 500;
+
+  @include vp-1919 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  &__title {
+    font-weight: 600;
+    margin-bottom: 16px;
+    line-height: 50px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__item {
+    transition: color $trans-default;
+
+    &:hover {
+      color: $color-free-speech-red;
+    }
+  }
+}

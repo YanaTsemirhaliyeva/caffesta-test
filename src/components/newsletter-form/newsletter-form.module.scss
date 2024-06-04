@@ -1,0 +1,25 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+
+.newsletter-form {
+
+  &__container {
+    margin-bottom: 39px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  &__input {
+    border: 4px solid $color-default-white;
+    border-radius: 5px;
+    background-color: $color-burnt-orange;
+    padding: 9px 40px 10px 37px;
+  }
+}

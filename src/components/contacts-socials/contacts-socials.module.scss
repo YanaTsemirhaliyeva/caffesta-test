@@ -1,0 +1,28 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+
+.contacts-socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+
+  @include vp-1919 {
+    gap: 0.5rem;
+  }
+
+  &__item {
+
+    &:hover {
+
+      path {
+        fill: $color-burnt-orange;
+      }
+    }
+
+    path {
+      transition: fill $trans-default;
+    }
+  }
+}

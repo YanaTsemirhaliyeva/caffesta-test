@@ -1,0 +1,26 @@
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: 0;
+  height: fit-content;
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 25px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 25px));
+  /* background: var(--swiper-pagination-bullet-inactive-color, #d9d9d9); */
+  /* box-shadow: inset 0 0 0 0.6px #000; */
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff6624;
+  box-shadow: none;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
+}
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}

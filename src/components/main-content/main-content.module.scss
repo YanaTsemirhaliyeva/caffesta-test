@@ -1,0 +1,38 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/variables.scss";
+
+.main-content {
+  max-width: 1990px;
+  margin: 0 auto 190px;
+
+  &__articles {
+    list-style: none;
+  }
+
+  &__article-item:not(:last-of-type) {
+    position: relative;
+    padding-bottom: 43px;
+    margin-bottom: 46px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 0.25rem;
+      background-color: $color-gainsboro;
+      width: 37%;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__link-wrapper {
+    width: fit-content;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  &__recipes {
+    margin-bottom: 76px;
+  }
+}
